@@ -113,12 +113,9 @@ fabric.properties
 .idea/modules.xml
 .idea/vcs.xml
 gulimall-common/gulimall-common.iml
-gulimall-common/src/
 gulimall-coupon/gulimall-coupon.iml
 gulimall-member/gulimall-member.iml
 gulimall-order/gulimall-order.iml
 gulimall-product/gulimall-product.iml
-gulimall-product/src/main/java/com/muchi/gulimallproduct/product/
-gulimall-product/src/main/resources/mapper/
 gulimall-ware/gulimall-ware.iml
 renren-fast/renren-fast.iml
