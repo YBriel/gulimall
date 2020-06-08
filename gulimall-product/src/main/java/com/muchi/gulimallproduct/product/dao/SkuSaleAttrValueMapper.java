@@ -2,6 +2,7 @@ package com.muchi.gulimallproduct.product.dao;
 
 import com.muchi.gulimallproduct.product.entity.SkuSaleAttrValue;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author yuzq
  * @since 2020-06-07
  */
+
 public interface SkuSaleAttrValueMapper extends BaseMapper<SkuSaleAttrValue> {
 
 }

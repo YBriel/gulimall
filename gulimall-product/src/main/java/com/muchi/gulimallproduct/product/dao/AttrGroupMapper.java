@@ -2,6 +2,8 @@ package com.muchi.gulimallproduct.product.dao;
 
 import com.muchi.gulimallproduct.product.entity.AttrGroup;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>
