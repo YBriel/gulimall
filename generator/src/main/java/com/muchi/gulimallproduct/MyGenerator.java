@@ -28,7 +28,7 @@ import java.util.Scanner;
  * 3.修改表前缀
  */
 
-public class Generator1 {
+public class MyGenerator {
 
 /**
      * <p>
@@ -55,7 +55,7 @@ public class Generator1 {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir") ;
-        gc.setOutputDir(projectPath + "\\gulimall-member\\src\\main\\java");
+        gc.setOutputDir(projectPath + "\\gulimall-ware\\src\\main\\java");
         gc.setAuthor("yuzq");
         gc.setOpen(false);
         gc.setFileOverride(true);//是否覆盖文件
@@ -66,7 +66,7 @@ public class Generator1 {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://39.106.121.52:3306/gulimall_ums?&characterEncoding=utf8&useSSL=false&serverTimezone=UTC");
+        dsc.setUrl("jdbc:mysql://39.106.121.52:3306/gulimall_wms?&characterEncoding=utf8&useSSL=false&serverTimezone=UTC");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("mz666");
@@ -86,7 +86,7 @@ public class Generator1 {
         // 包配置
         PackageConfig pc = new PackageConfig();
         String packgeName = scanner("包名");
-        pc.setParent("com.muchi.gulimallmember."+packgeName);
+        pc.setParent("com.muchi.gulimallware."+packgeName);
         pc.setController("controller");
         pc.setEntity("entity" );
         pc.setService("service" );
@@ -112,7 +112,7 @@ public class Generator1 {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return projectPath + "/gulimall-member/src/main/resources/mapper/" + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
+                return projectPath + "/gulimall-ware/src/main/resources/mapper/" + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
 
@@ -134,7 +134,7 @@ public class Generator1 {
         // 写于父类中的公共字段
         strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
         strategy.setControllerMappingHyphenStyle(true);
-        strategy.setTablePrefix("ums_");
+        strategy.setTablePrefix("wms_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
