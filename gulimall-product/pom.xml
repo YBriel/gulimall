@@ -43,17 +43,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--代码生成-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-generator</artifactId>
-            <version>${mybatis-plus-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency>
-
         <dependency>
             <artifactId>gulimall-common</artifactId>
             <groupId>com.muchi</groupId>
